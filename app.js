@@ -11,6 +11,9 @@ app.use(json());
 
 // Rutas de usuarios
 app.use('/api', userRoutes);
+app.get('/saludo', (req, res)=>{
+    res.send("hola mundo");
+})
 
 //Iniciar el servidor
 const PORT = process.env.PORT || 3000;
