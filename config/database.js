@@ -13,5 +13,6 @@ const pool = createPool({
 });
 
 console.log(process.env.DB_PORT?"true":"false");
+console.log(pool);
 
 export default pool;

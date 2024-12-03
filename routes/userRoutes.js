@@ -13,5 +13,7 @@ router.get('/user', getAllUsers);
 router.post('/user', validateGmail, createUser);
 router.put('/user/:id', validateGmail, updateUser);
 router.delete('/user/:id', deleteUser);
-
+router.get('/saludo', (req, res)=>{
+    res.send("hola mundo");
+})
 export default router;
